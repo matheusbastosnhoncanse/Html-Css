@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {
+    font: normal 17px arial,sans-serif;
+    background-color: cadetblue;
+    text-align: justify;
+    text-indent: 20px;
+}
+header{
+    font: bolder 2em ;
+    padding: 10px;
+    margin: 10px;
+    background-color: aliceblue;
+    border: 10px black solid;
+    box-shadow:0px 7px 8px 0px black;
+    
+}
+nav {
+    background-color: aliceblue;
+    margin: 21px;
+    padding: 10px;
+    border: 10px black solid;
+    text-align: center;
+    border-radius: 18px;
+    
+}
+nav > a {
+    text-decoration: none;
+    color: rgb(48, 122, 124);
+    margin-right: 10px;
+}
+nav > a:hover {
+    text-decoration: underline;
+    font-size: 17.5px;
+    color: rgb(23, 188, 194);
+    font-weight: bolder;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 40px;
+    border: 10px white solid;
+    text-align: center;
+    border-radius: 15px 1px;
+}
+main {
+    background-color: aliceblue;
+    border: 10px black solid;
+    margin: 10px;
+    border-radius: 16px;
+    box-shadow: 9px -10px 12px rgba(0, 0, 0, 0.432);
+}
+aside{
+
+    background-color:rgb(125, 205, 207);
+    width: 311px;
+    border: 6px black double;
+}
+
+#assuntos {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border: 17px black double;
+}
+footer > p {
+    margin: 10px auto 10px auto;
+}
+article > p {
+
+    margin: 10px 6px 10px 4px;
+}

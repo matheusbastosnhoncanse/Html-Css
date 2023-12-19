@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "B";
+    src: url("fonte/Bekind.ttf") format("truetype");
+    font-weight: normal;
+    font-size: 19px;
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700 & display=swap');
+
+    ¨{
+        height: 100%;
+    }    
+    body {
+ 
+        text-align: justify;
+        font: normal oblique 17px Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+
+        text-align: center;
+        text-decoration: underline;
+        font-family: "Ubuntu Mono";
+        font-size: 3.5em;
+        font-weight: bolder;
+        font-style: italic;
+    }
+
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-family: "Ubuntu Mono";
+        font-size: 2.9em;
+        font-weight: bold;
+        font-style: italic;
+    }
