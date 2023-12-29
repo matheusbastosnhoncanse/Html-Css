@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;400;500;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Oswald:wght@200;300;400;500;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+:root {
+    --font1:"Oswald",sans-serif;
+    --font2:"DM Mono",monospace;
+    --font3:"Single Day";
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+html , body {
+    background-color: darkgray;
+    min-height: 100%;
+    
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 20px;
+    font-variant: small-caps;
+    font: bold 10vh var(--font1);
+}
+header > p {
+    padding-bottom: 20px;
+    padding-top: 5px;
+    font-family: var(--font2);
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    line-height: 2em;
+    padding-left: 30px;
+    font:normal 3.9vh var(--font3);
+}
+section > p {
+    padding-bottom: 1em;
+}
+.normal {
+    background-color: white;
+    color: black;
+    
+}
+
+#imagen1 {
+    
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+#imagen2 {
+    background-image:url(../imagens/background002.jpg);
+    background-position: center center;
+}
+.imagen {
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.575);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.imagen > p {
+    background-color: rgba(0, 0, 0, 0.795);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.589);
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font2),Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
