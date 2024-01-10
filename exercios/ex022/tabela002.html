@@ -8,13 +8,26 @@
         body {
             font: normal 17px arial,sans-serif;
         }
+        h1 {
+            font: bold 2em arial,sans-serif;
+            text-align: center;
+        }
         table {
             width: 450px;
             border-collapse: collapse;
+            
+        }
+        thead >tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgba(17, 17, 17, 0.788);
+        }
+        tbody > tr:nth-child(2n-1) {
+            background-color: lightgray;
         }
         
         th {
-            background-color: gray;
+            background-color: rgba(17, 17, 17, 0.788);
             color: white;
         }
         td , th {
@@ -24,16 +37,22 @@
         .num {
            text-align: right; 
         }
+        caption {
+           font: bold 1.5em arial,sans-serif; 
+           padding: 10px;
+           background-color: rgba(163, 163, 163, 0.616);
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>Ano</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+                <th scope="col">Ano</th>
             </tr>
         </thead>
         <tbody>
@@ -80,11 +99,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <th>210 147125</th>
-                <th>2023</th>
+                <th scope="row">Total de Habitantes</th>
+                <th scope="row" colspan="2">210 147125</th>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cum deserunt accusamus iusto odit pariatur quidem quod eveniet iste dignissimos quaerat beatae dolorem, atque, blanditiis, necessitatibus modi suscipit dolorum a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo nisi nihil consequatur veritatis. Quisquam tenetur alias officia, quod quaerat dignissimos provident minus esse hic aut maiores nobis modi possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error necessitatibus natus rem vitae, ipsam illum et nostrum molestias doloremque aspernatur doloribus eius ullam corrupti explicabo exercitationem, quaerat nisi obcaecati veritatis?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cum deserunt accusamus iusto odit pariatur quidem quod eveniet iste dignissimos quaerat beatae dolorem, atque, blanditiis, necessitatibus modi suscipit dolorum a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo nisi nihil consequatur veritatis. Quisquam tenetur alias officia, quod quaerat dignissimos provident minus esse hic aut maiores nobis modi possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error necessitatibus natus rem vitae, ipsam illum et nostrum molestias doloremque aspernatur doloribus eius ullam corrupti explicabo exercitationem, quaerat nisi obcaecati veritatis?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cum deserunt accusamus iusto odit pariatur quidem quod eveniet iste dignissimos quaerat beatae dolorem, atque, blanditiis, necessitatibus modi suscipit dolorum a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo nisi nihil consequatur veritatis. Quisquam tenetur alias officia, quod quaerat dignissimos provident minus esse hic aut maiores nobis modi possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error necessitatibus natus rem vitae, ipsam illum et nostrum molestias doloremque aspernatur doloribus eius ullam corrupti explicabo exercitationem, quaerat nisi obcaecati veritatis?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cum deserunt accusamus iusto odit pariatur quidem quod eveniet iste dignissimos quaerat beatae dolorem, atque, blanditiis, necessitatibus modi suscipit dolorum a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nemo nisi nihil consequatur veritatis. Quisquam tenetur alias officia, quod quaerat dignissimos provident minus esse hic aut maiores nobis modi possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error necessitatibus natus rem vitae, ipsam illum et nostrum molestias doloremque aspernatur doloribus eius ullam corrupti explicabo exercitationem, quaerat nisi obcaecati veritatis?</p>
 </body>
 </html>
