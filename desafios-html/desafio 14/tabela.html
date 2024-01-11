@@ -21,21 +21,26 @@
             padding: 10px;
             border: 1px solid black;
         }
+        .media {
+            text-align: left;
+            color: white;
+            background-color: gray;
+        }
     </style>
 </head>
 <body>
     <table>
         <thead>
             <tr>
-                <th class="head">Área</th>
-                <th class="head">Disciplinas</th>
-                <th class="head" colspan="2">Notas </th>
-                <th class="head">Média</th>
+                <th class="head" scope="row">Área</th>
+                <th class="head" scope="row">Disciplinas</th>
+                <th class="head" colspan="2" scope="rowgroup">Notas </th>
+                <th class="head" scope="row">Média</th>
             </tr>
         </thead>
             <tbody>
                 <tr>
-                    <th rowspan="4">Exatas</th>
+                    <th rowspan="4" scope="colgroup">Exatas</th>
                     <td>Matemática</td>
                     <td>7</td>
                     <td>6</td>
@@ -60,8 +65,25 @@
                     <td>5</td>
                 </tr>
                 <tr>
-                    <th class="head" class="media">Média de Exatas</th>
-                    td
+                    <th  colspan="4"  class="media" scope="col">Média de Exatas</th>
+                    <td class="media">6,5</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Humanas</th>
+                    <td>Historia</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>4,5</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>6,5</td>
+                </tr>
+                <tr>
+                    <th  colspan="4"  class="media" scope="col">Média de Humanas</th>
+                    <td class="media">5,5</td>
                 </tr>
             </tbody>
     </table>
