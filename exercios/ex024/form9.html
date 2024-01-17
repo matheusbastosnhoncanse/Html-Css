@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exeplo de formulario</h1>
+    <form action="cadastro.js" method="get">
+        <fieldset>
+            <div>
+                <label for="inu">Número: </label>
+                <input type="range" name="num" id="inu" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inu.value)">
+                <output id="ival">5</output>
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

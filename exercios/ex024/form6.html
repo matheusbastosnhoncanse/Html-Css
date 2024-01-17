@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font: normal 17px arial,sans-serif;
+        }
+        div {
+            margin: 15px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Emplo de formulario</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <fieldset>
+            <div>
+                <label for="ico">Cor:</label>
+                <input type="color" name="icor" id="ico" value="#D389E1">
+            </div>
+            <div>
+                <label for="ini">Nivel de Sativação:</label>
+                <input type="range" name="nivel" id="ini" value="0" min="0" max="3">
+            </div>
+            <div>
+                <label for="ifo">Foto e Perfil:</label>
+                <input type="file" name="foto" id="ifo">
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

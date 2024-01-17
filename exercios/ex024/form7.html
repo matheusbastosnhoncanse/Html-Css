@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Explo de formulario</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <div>
+            <label for="ies">Estado:</label>
+            <select name="estado" id="ies" required>
+                <option value="" selected>Escolha um Estado</option>
+                <optgroup label="1">
+                    <option value="Sp">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MN">Minas Gerais</option>
+                </optgroup>                
+                <optgroup label="2">
+                    <option value="Ba">Bahia</option>
+                    <option value="Pa">Parana</option>
+                    <option value="Re">Recife</option>
+                </optgroup>                           
+            </select>
+        </div>
+        <div>
+            <label for="ipro">Profissão:</label>
+            <input type="text" name="pro" id="ipro" list="lispro" placeholder="Escolha a sua Profissão" required>
+            <datalist id="lispro">
+                <option value="Adm">Administrador</option>
+                <option value="Pro">Professor</option>
+                <option value="Pe">Pedreiro</option>
+                <option value="Ad">Advolgado</option>
+                <option value="Con">Contador</option>
+                <option value="Dev">Desenvolverdor</option>       
+            </datalist>
+        </div>
+        <div>
+            <label for="img">Mengagem:</label><br>
+            <textarea name="mg" id="img" cols="30" rows="10" required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

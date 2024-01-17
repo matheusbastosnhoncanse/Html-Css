@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font: normal 17px arial,sans-serif;
+        }
+        div {
+            margin: 15px;
+        }
+        .in:invalid {
+            background-color: rgba(226, 83, 112, 0.74);
+        }
+        .in:valid {
+            background-color: rgba(78, 219, 172, 0.801);
+        }
+    </style>
+</head>
+<body>
+    <h1>Explo de Formulario</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Seus dados pessoais</legend>
+            <div>
+                <label for="ino">Nome:</label>
+                <input type="text" name="nome" id="ino" required placeholder="Seu nome" minlength="5" maxlength="15" size="17" class="in">
+            </div>
+            <div>
+                <label for="iem">E-mail:</label>
+                <input type="email" name="email" id="iem" required placeholder="Coloque seu email" minlength="15" maxlength="30" size="31" autocomplete="email" class="in">
+            </div>
+            <div>
+                <label for="ite">Telefone:</label>
+                <input type="tel" name="Telefone" id="itel" required placeholder="(xx) xxxx-xxxx" size="31" pattern="(\d{2}\)\d{4}-\d{4}" class="in">
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
