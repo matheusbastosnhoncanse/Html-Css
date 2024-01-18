@@ -6,7 +6,10 @@
 }
 html {
     font: normal 17px arial,sans-serif;
-    background-color: lightgray;
+    background-color: white;
+}
+header {
+    background-color: lightslategrey;
 }
 header > h1 {
     text-align: center;

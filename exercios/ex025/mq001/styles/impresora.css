@@ -8,6 +8,9 @@ html {
     font: normal 1.5em 'Courier New', Courier, monospace;
     line-height: 1.5em;
 }
+header {
+    background-color: lightslategrey;
+}
 menu {
     display: none;
 }
@@ -15,7 +18,6 @@ article::after {
     content: 'Esse arigo e um explo de media queriy';
 }
 main {
-    background-color: white;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 
