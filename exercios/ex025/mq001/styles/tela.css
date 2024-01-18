@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding:0px;
+}
+html {
+    font: normal 17px arial,sans-serif;
+    background-color: lightgray;
+}
+header > h1 {
+    text-align: center;
+    font-size: 2em;
+}
+menu ul{
+    list-style-type: none;
+}
+menu li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+}
+main {
+    margin: 10px;
+    display: block;
+    margin: auto;
+}
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+main p {
+    padding: 5px;
+    line-height: 1.5em;
+}
+main > article > h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
