@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <style>
+        @media screen and (max-width: 760px){
+            div.periodo {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+                margin: 0 50px;
+            }
+            aside.periodo-mostrada {
+                text-align: left;
+            }
+            .icone {
+                display: block;
+                margin: auto;
+            }
+        }
+        body {
+            font-family: Arial, Helvetica , sans-serif;
+            background-color: lightcoral;
+        }
+        .perido {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .periodo-minimo {
+            margin: 10px;
+            background-color: transparent;
+            border: none;
+            font-size: 1.7em;
+        }   
+        aside.periodo-mostrada {
+            text-align: center;
+            flex: 1;
+            font-size: 2em;
+        }
+        .icone {
+            display: block;
+            margin: auto;
+            min-width: 50px;
+            height: 50px;
+            width: 50px;
+        }
+        div {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.37);
+            margin: 10px 10px;
+            padding: 20px 0px;
+            color: white;
+            border-radius: 10px;
+            border: 1px solid whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <main class="caixa">
+        <div class="periodo">
+            <aside class="periodo-mostrada"><p>Manhã</p></aside>
+                <aside class="icone"><img src="https://cdn-icons-png.flaticon.com/512/1146/1146860.png" alt="imagem de tempestade" height="100%" width="100%"></aside>
+                <div class="periodo-minimo">
+                    <aside class="perido-celsius">16°C</aside>
+                    <aside class="perido-umidade">78%</aside>
+                </div>
+            
+        </div>
+        <div class="periodo">
+            <aside class="periodo-mostrada"><p>Tarde</p></aside>
+                <aside class="icone"><img src="https://cdn-icons-png.flaticon.com/512/1140/1140045.png" alt="imagem de nublado" height="100%" width="100%"></aside>
+                <div class="periodo-minimo">
+                    <aside class="perido-celsius">20°C</aside>
+                    <aside class="perido-umidade">60%</aside>
+                </div>
+            
+        </div>
+        <div class="periodo">
+            <aside class="periodo-mostrada"><p> Final da Tarde</p></aside>
+                <aside class="icone"><img src="https://cdn-icons-png.flaticon.com/512/4765/4765737.png" alt="imagem de chuva" height="100%" width="100%">
+                    </aside>
+                    <div class="periodo-minimo">
+                        <aside class="perido-celsius">19°C</aside>
+                        <aside class="perido-umidade">73%</aside>
+                    </div>
+                </div>
+            
+        
+        <div class="periodo">
+            <aside class="periodo-mostrada"><p>Noite</p></aside>
+                <aside class="icone"><img src="https://cdn-icons-png.flaticon.com/512/2204/2204349.png" alt="imagem de lua cheia" height="100%" width="100%"></aside>
+                <div class="periodo-minimo">
+                    <aside class="perido-celsius">20°C</aside>
+                    <aside class="perido-umidade">58%</aside>
+                </div>
+            </div>
+        <div class="periodo">
+            <aside class="periodo-mostrada"><p>Madrugada</p></aside>
+                <aside class="icone"><img src="https://cdn-icons-png.flaticon.com/512/7084/7084486.png" alt="imagem de nublado" height="100%" width="100%"></aside>
+                <div class="periodo-minimo">
+                    <aside class="perido-celsius">16°C</aside>
+                    <aside class="perido-umidade">78%</aside>
+                </div>
+            
+        </div>
+    </main>
+</body>
+</html>
