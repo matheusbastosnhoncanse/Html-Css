@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        section {
+            display: grid;
+            gap: 3px;
+            grid-template-columns: repeat(3 , 1fr);
+
+            height: 100vh;
+            width: 100vw;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: turquoise;
+            place-self: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>
