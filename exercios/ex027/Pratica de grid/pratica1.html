@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+         body {
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-areas: 
+        'header'
+        'main'
+        'aside-junto'
+        'aside-main'
+        'aside-sec'
+        'footer'
+        ;
+        
+        gap: 5px;
+
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        color: white;
+    }
+    header {
+        grid-area:1/5;
+        grid-area: header;
+        background-color: aqua;
+    }
+    main {
+        grid-area: main;
+        background-color: tomato;
+    }
+    aside {
+        background-color: blueviolet;
+    }
+    .aside-junto {
+        grid-area: aside-junto;
+    }
+    .aside-main {
+        grid-area: aside-main;
+    }
+    .aside-sec {
+        grid-area: aside-sec;
+    }
+    footer {
+        grid-area: footer;
+        background-color: aqua;
+    }
+    @media screen  and (min-width: 992px) {
+        body {
+        display: grid;
+        grid-template-columns:  repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+        'header header header header ' 'main main main  aside-junto' 'aside-main aside-main aside-sec aside-sec' 'footer footer footer footer '
+        ;
+        gap: 5px;
+
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    header {
+        grid-area: header;
+        grid-column: 1/6;
+        background-color: aqua;
+    }
+    main {
+        grid-area: main;
+        grid-column: 2/4;
+        grid-row: 2/4;
+        background-color: tomato;
+    }
+    .aside-junto {
+        grid-area: aside-junto;
+        grid-column: 4/5;
+        grid-row: 2/4;
+        background-color: rgb(1, 110, 253);
+    }
+    aside {
+        background-color: blueviolet;
+    }
+    .aside-main {
+        grid-area: aside-main;
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .aside-sec {
+        grid-area: aside-sec;
+        grid-row: 4/5;
+        grid-column: 3/5;
+    } 
+    footer {
+        grid-area: footer;
+        background-color: aqua;
+        grid-row: 5/6;
+        grid-column: 1/6;
+    }
+}
+    </style>
+</head>
+<body>
+   
+        <header>HEADER</header>
+        <main>MAIN</main>
+        <aside class="aside-junto">EXTRA</aside>
+        <aside class="aside-main">ASIDE</aside>
+        <aside class="aside-sec">ASIDE</aside>
+        <footer>FOOTER</footer>
+
+</body>
+</html>
